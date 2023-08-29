@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(./assets/dolar-image.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1600px;
+
+
+}
+
+.conversor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    width: 650px;
+    padding: 1rem;
+    margin: 5rem auto;
+    background-color: rgba(0, 0, 0, 0.562);
+    border-radius: 20px;
+
+}
+
+.conversor img {
+    width: 300px;
+
+}
+
+.conversor h1 {
+    text-transform: capitalize;
+    color: aliceblue;
+    text-shadow: 3px 3px 5px black;
+    margin-bottom: 12px;
+}
+
+input {
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    width: 15rem;
+    height: 2.8rem;
+    padding: 8px;
+    text-align: center;
+
+}
+
+#dolar-value {
+    display: none;
+}
+
+#euro-value {
+    display: none;
+}
+
+.btn-region {
+    display: flex;
+    gap: 17px;
+    margin-top: 5px;
+
+}
+
+.btn-region span {
+    display: flex;
+    align-items: center;
+}
+
+.btn-region input {
+
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+
+    cursor: pointer;
+}
+
+.btn-box button {
+    cursor: pointer;
+    width: 7rem;
+    padding: 10px;
+    margin: 5px 10px;
+    border-radius: 9px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: aliceblue;
+
+    transition: ease-in-out .2s;
+
+}
+
+.btn-box button:hover {
+    background-color: rgb(255, 166, 0);
+
+}
+
+p {
+
+    color: white;
+    text-shadow: 3px 3px 5px black;
+    text-align: center;
+
+    font-size: 12px;
+}
+
+
+.valorResultBRL {
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    width: 15rem;
+    height: 3rem;
+    padding-top: 15px;
+    margin-bottom: 25px;
+    text-align: center;
+
+    background-color: rgb(211, 211, 200);
+}
+
+.valorResultUSD {
+    display: none;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    width: 15rem;
+    height: 3rem;
+    padding-top: 15px;
+    margin-bottom: 25px;
+    text-align: center;
+
+    background-color: rgb(211, 211, 200);
+}
+
+.valorResultEUR {
+    display: none;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    width: 15rem;
+    height: 3rem;
+    padding-top: 15px;
+    margin-bottom: 25px;
+    text-align: center;
+
+    background-color: rgb(211, 211, 200);
+}
+
+.valorResultBRLE {
+    display: none;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    width: 15rem;
+    height: 3rem;
+    padding-top: 15px;
+    margin-bottom: 25px;
+    text-align: center;
+
+    background-color: rgb(211, 211, 200);
+}

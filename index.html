@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coversor de moedas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/moeda.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="conversor">
+        <img src="./assets/coin-flip-43.gif" alt="coin-image-gif">
+
+        <h1>Money conversor</h1>
+
+        <input id="real-value" type="number" placeholder="Valor em Real">
+        <input id="dolar-value" type="number" placeholder="Valor em Dólar">
+        <input id="euro-value" type="number" placeholder="Valor em Euro">
+
+        <div class="btn-region">
+            <span>
+                <p>BRL</p>
+                <input id="BRL" type="radio" name="btn-region" checked>
+            </span>
+            <span>
+                <p>USD</p>
+                <input id="USD" type="radio" name="btn-region">
+            </span>
+            <span>
+                <p>EUR</p>
+                <input id="EUR" type="radio" name="btn-region">
+            </span>
+            <span>
+                <p>BRL-E</p>
+                <input id="BRLE" type="radio" name="btn-region">
+            </span>
+        </div>
+
+        <br>
+        <div class="btn-box">
+            <button id="btn" type="button">Conversor</button>
+            <button id="clear" type="button">Limpar</button>
+        </div>
+        <br>
+        <div class="Result">
+            <p id="Dolar-text">Dólar:</p>
+            <div class=" valorResultBRL">00</div>
+            <div class=" valorResultUSD">00</div>
+            <div class=" valorResultEUR">00</div>
+            <div class=" valorResultBRLE">00</div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
