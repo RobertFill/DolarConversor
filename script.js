@@ -1,9 +1,12 @@
 const valorReal = document.getElementById('real-value');
 const valorDolar = document.getElementById('dolar-value');
 const valorEuro = document.getElementById('euro-value');
+
 const btnConversor = document.getElementById('btn');
 const btnClear = document.getElementById('clear');
-const textMoneyFormat = document.getElementById('Dolar-text');
+
+const textMoneyFormat = document.getElementById('Dolar-text'); //change name format region//
+
 const resultBRL = document.querySelector('.valorResultBRL');
 const resultUSD = document.querySelector('.valorResultUSD');
 const resultEUR = document.querySelector('.valorResultEUR');
@@ -11,7 +14,7 @@ const resultBRLE = document.querySelector('.valorResultBRLE');
 
 const btnUSD = document.getElementById('USD');
 const btnEUR = document.getElementById('EUR');
-const btnBRLE = document.getElementById('BRLE');
+const btnBRLE = document.getElementById('BRLE'); // buttons change Region //
 const btnBRL = document.getElementById('BRL');
 
 btnUSD.addEventListener('click', () => {
@@ -54,7 +57,7 @@ btnClear.addEventListener('click', () => {
   clearResults();
 });
 
-async function convertValueBRL() {
+async function convertValueBRL() { //conversores//
   const requestURL = `https://api.exchangerate.host/convert?from=BRL&to=USD&amount=${valorReal.value}`;
   const response = await fetch(requestURL);
   const data = await response.json();
@@ -82,36 +85,36 @@ async function convertValueBRLE() {
   resultBRLE.textContent = data.result.toFixed(2);
 }
 
-function showValueInputReal(text) {
+function showValueInputReal(text) { //mostrar a região selecionada e esconder a outra região//
   valorReal.style.display = 'block';
   valorDolar.style.display = 'none';
   valorEuro.style.display = 'none';
   textMoneyFormat.innerText = text;
 }
 function showValueInputDolar(text) {
-    valorReal.style.display = 'none';
-    valorDolar.style.display = 'block';
-    valorEuro.style.display = 'none';
-    textMoneyFormat.innerText = text;
-  }
-  function showValueInputEuro(text) {
-    valorReal.style.display = 'none';
-    valorDolar.style.display = 'none';
-    valorEuro.style.display = 'block';
-    textMoneyFormat.innerText = text;
-  }
-  function showValueInputRealEuro(text) {
-    valorReal.style.display = 'block';
-    valorDolar.style.display = 'none';
-    valorEuro.style.display = 'none';
-    textMoneyFormat.innerText = text;
-  }
+  valorReal.style.display = 'none';
+  valorDolar.style.display = 'block';
+  valorEuro.style.display = 'none';
+  textMoneyFormat.innerText = text;
+}
+function showValueInputEuro(text) {
+  valorReal.style.display = 'none';
+  valorDolar.style.display = 'none';
+  valorEuro.style.display = 'block';
+  textMoneyFormat.innerText = text;
+}
+function showValueInputRealEuro(text) {
+  valorReal.style.display = 'block';
+  valorDolar.style.display = 'none';
+  valorEuro.style.display = 'none';
+  textMoneyFormat.innerText = text;
+}
 
-function showResult(resultElement) {
+function showResult(resultElement) { //mostrar o resultado selecionado//
   resultElement.style.display = 'block';
 }
 
-function hideResult(...resultElements) {
+function hideResult(...resultElements) {  //para esconder os resultados anteriores//
   resultElements.forEach((resultElement) => {
     resultElement.style.display = 'none';
   });
@@ -123,6 +126,6 @@ function clearResults() {
   resultEUR.textContent = '00';
   resultBRLE.textContent = '00';
 }
-function resetInput(inputId){
-    document.getElementById(inputId).value = '';
+function resetInput(inputId) { //função para resetar input após o valor//
+  document.getElementById(inputId).value = '';
 }

@@ -39,7 +39,7 @@ body {
     margin-bottom: 12px;
 }
 
-input {
+input { /* All inputs */
     border: none;
     border-radius: 5px;
     outline: none;
@@ -50,12 +50,12 @@ input {
 
 }
 
-#dolar-value {
-    display: none;
+#dolar-value { /* hiden input*/
+    display: none; 
 }
 
-#euro-value {
-    display: none;
+#euro-value { /* hiden input*/
+    display: none; 
 }
 
 .btn-region {
@@ -122,7 +122,7 @@ p {
     background-color: rgb(211, 211, 200);
 }
 
-.valorResultUSD {
+.valorResultUSD { /* hiden input*/
     display: none;
     border: none;
     border-radius: 5px;
@@ -136,7 +136,7 @@ p {
     background-color: rgb(211, 211, 200);
 }
 
-.valorResultEUR {
+.valorResultEUR { /* hiden input*/
     display: none;
     border: none;
     border-radius: 5px;
@@ -150,7 +150,7 @@ p {
     background-color: rgb(211, 211, 200);
 }
 
-.valorResultBRLE {
+.valorResultBRLE { /* hiden input*/
     display: none;
     border: none;
     border-radius: 5px;
